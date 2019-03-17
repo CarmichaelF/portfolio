@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,500i');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url('/images/background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    padding: 0;
+    padding-top: 20px;
+}
+
+.navbar-nav li:last-child {
+    background-color: #34E7E4;
+    padding: 0px 15px;
+    border-radius: 5px;
+}
+
+.navbar-brand::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.fa-align-right {
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+main {
+    display: flex;
+    position: relative;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+main>a>img {
+    width: 40px;
+}
+
+.line-before {
+    display: inline-block;
+    position: absolute;
+    left: 0%;
+    width: 2px;
+    height: 110px;
+    background-color: #0FBCF9;
+}
+
+.main-first {
+    padding-left: 60px;
+}
+
+.main-first h1 {
+    color: #485460;
+    font-weight: 500;
+}
+
+.main-first>p {
+    width: 60%;
+    color: #808E9B;
+}
+
+.tag {
+    padding: 20px 60px;
+    margin: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    font-weight: 500;
+    font-style: italic;
+    color: #485460;
+    font-size: 20px;
+}
+
+.tag i,
+.tag img {
+    font-size: 25px;
+    color: #485460;
+    width: 25px;
+    float: left;
+}
+
+.orange {
+    color: #fa8231 !important;
+}
+
+.yellow {
+    color: #F0DB4F !important;
+}
+
+.blue {
+    color: #61DBFB !important;
+}
+
+@media (max-width: 992px) {
+    .main-first>p {
+        width: 100%;
+    }
+
+    .line-before {
+        display: none;
+    }
+
+    .main-first {
+        padding: 80px 40px;
+    }
+
+    body {
+        background-size: auto;
+    }
+
+    .fa-align-right {
+        background-image: linear-gradient(#6610f2, #6f42c1);
+        padding: 20px;
+        border-radius: 50%;
+    }
+
+    .navbar-nav li:last-child {
+        background-color: transparent;
+        padding: 0px;
+    }
+
+    main>a>img {
+        display: none;
+    }
+}
