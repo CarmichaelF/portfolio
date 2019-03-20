@@ -13,7 +13,6 @@ html {
 }
 
 body {
-    max-width: 1920px;
     width: 100%;
     background-image: url('/images/background.svg');
     background-size: cover;
@@ -149,7 +148,6 @@ main {
     transform: scale(1.05);
     transition: 0.4s;
 }
-
 .b-1 {
     border-radius: 15px 15px 0px 15px;
 }
